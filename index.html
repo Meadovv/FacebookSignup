@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook - Signup</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="header">
+                <div class="welcome">
+                    <h1>Sign Up</h1>
+                    <h2>It's quick and easy</h2>
+                </div>
+                <i class="bi bi-x"></i>
+            </div>
+            <hr />
+            <div class="form">
+                <div class="name">
+                    <input id="firstname" class="field" placeholder="First name"/>
+                    <input id="surname" class="field" placeholder="Surname"/>
+                </div>
+                <input id="username" class="field" placeholder="Mobile number or email address"/>
+                <input id="password" class="field" placeholder="New Password"/>
+                <div class="field_with_icon">
+                    <div class="field_header">
+                        <p class="">Date of birth</p>
+                        <i class="bi bi-question-circle-fill"></i>
+                    </div>
+                    <div class="fields">
+                        <select id="day" class="select_field">
+                            <!-- Options for day (1-31) -->
+                        </select>
+                        <select id="month" class="select_field">
+                            <!-- Options for month (1-12) -->
+                        </select>
+                        <select id="year" class="select_field">
+                            <!-- Options for year (e.g., 1900-2022) -->
+                        </select>
+                    </div>
+                </div>
+                <div class="field_with_icon">
+                    <div class="field_header">
+                        <p class="">Gender</p>
+                        <i class="bi bi-question-circle-fill"></i>
+                    </div>
+                    <div id="gender" class="fields">
+                        <label class="radio-container">
+                            <span>Female</span>
+                            <input type="radio" name="gender" value="female">
+                        </label>
+                        <label class="radio-container">
+                            <span>Male</span>
+                            <input type="radio" name="gender" value="male">
+                        </label>
+                        <label class="radio-container">
+                            <span>Custom</span>
+                            <input type="radio" name="gender" value="custom">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="custom_gender_addon">
+                    <select class="select_field">
+                        <option value="default" selected disabled>Select your pronoun</option>
+                        <option>She: "Wish her a happy Birthday!"</option>
+                        <option>He: "Wish him a happy Birthday!"</option>
+                        <option>They: "Wish them a happy Birthday!"</option>
+                    </select>
+                    <div class="note">Your pronoun is visible to everyone.</div>
+                    <input class="field" placeholder="Gender (optional)"/>
+                </div>
+
+                <div class="note">
+                    People who use our service may have uploaded your contact information to Facebook. <span class="link">Learn more.</span>
+                </div>
+
+                <div class="note">
+                    By clicking Sign Up, you agree to our <span class="link">Terms</span>, <span class="link">Privacy Policy</span> and <span class="link">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.
+                </div>
+
+                <div class="signup">
+                    <button class="signup_button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

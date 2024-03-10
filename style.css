@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background {
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #cfcece;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.welcome h1 {
+    font-size: 2rem;
+}
+
+.welcome h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.header i {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #292929;
+    cursor: pointer;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.form i {
+    cursor: pointer;
+}
+
+.field {
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.form .name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form .name .field {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.form .field_with_icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form .field_with_icon .fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form .field_with_icon .field_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.form .field_with_icon .field_header i {
+    color: #535353;
+}
+
+.select_field {
+    width: 30%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+}
+
+.form .field_with_icon .fields .radio-container {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.form .note {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+}
+
+.form .note .link{
+    color: #1e2e86;
+    cursor: pointer;
+}
+
+.form .note .link:hover{
+    color: #3e5bff;
+    cursor: pointer;
+}
+
+.form .signup {
+    padding: 10px;
+}
+
+.form .signup .signup_button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #4267b2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form .signup .signup_button:hover {
+    background-color: #365899;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.custom_gender_addon {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom_gender_addon .select_field {
+    width: 100%;
+}
