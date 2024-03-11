@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Facebook - Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
 </head>
+
 <body>
     <div class="background">
         <div class="container">
@@ -27,6 +29,9 @@
                 <input id="password" class="field" placeholder="New Password"/>
                 <div class="field_with_icon">
                     <div class="field_header">
+                        <div class="guide">
+                            Providing your birthday helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your profile. For more details, please visit our <span class="link">Privacy Policy.</span>
+                        </div>
                         <p class="">Date of birth</p>
                         <i class="bi bi-question-circle-fill"></i>
                     </div>
@@ -44,10 +49,13 @@
                 </div>
                 <div class="field_with_icon">
                     <div class="field_header">
+                        <div class="guide">
+                            You can change who sees your gender on your profile later. Select Custom to choose another gender, or if you'd rather not say.
+                        </div>
                         <p class="">Gender</p>
                         <i class="bi bi-question-circle-fill"></i>
                     </div>
-                    <div id="gender" class="fields">
+                    <div class="fields">
                         <label class="radio-container">
                             <span>Female</span>
                             <input type="radio" name="gender" value="female">
@@ -66,9 +74,9 @@
                 <div class="custom_gender_addon">
                     <select class="select_field">
                         <option value="default" selected disabled>Select your pronoun</option>
-                        <option value="option1">She: "Wish her a happy Birthday!"</option>
-                        <option value="option2">He: "Wish him a happy Birthday!"</option>
-                        <option value="option3">They: "Wish them a happy Birthday!"</option>
+                        <option>She: "Wish her a happy Birthday!"</option>
+                        <option>He: "Wish him a happy Birthday!"</option>
+                        <option>They: "Wish them a happy Birthday!"</option>
                     </select>
                     <div class="note">Your pronoun is visible to everyone.</div>
                     <input class="field" placeholder="Gender (optional)"/>
