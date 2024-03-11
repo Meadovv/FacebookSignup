@@ -143,6 +143,11 @@ hr {
     cursor: pointer;
 }
 
+span .link {
+    color: #1e2e86;
+    cursor: pointer;
+}
+
 .form .note .link:hover{
     color: #3e5bff;
     cursor: pointer;
@@ -178,4 +183,9 @@ hr {
 
 .custom_gender_addon .select_field {
     width: 100%;
+}
+
+.guide {
+    border: 1px solid gray;
+    text-align: left;
 }
