@@ -113,6 +113,21 @@ hr {
     color: #535353;
 }
 
+.guide {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    left: 190px;
+    width: 500px;
+    text-align: left;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid #ccd0d5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .select_field {
     width: 30%;
     padding: 10px;
@@ -143,12 +158,12 @@ hr {
     cursor: pointer;
 }
 
-span .link {
+span.link {
     color: #1e2e86;
     cursor: pointer;
 }
 
-.form .note .link:hover{
+span.link:hover{
     color: #3e5bff;
     cursor: pointer;
 }
@@ -183,9 +198,4 @@ span .link {
 
 .custom_gender_addon .select_field {
     width: 100%;
-}
-
-.guide {
-    border: 1px solid gray;
-    text-align: left;
 }

@@ -101,6 +101,7 @@ password.addEventListener('change', function() {
 
 
 document.querySelector('.signup_button').addEventListener('click', function() {
+    
     if(!firstname.value) {
         firstname.style.border = '1px solid #ce4646'
     } else {
@@ -140,6 +141,53 @@ document.querySelector('.signup_button').addEventListener('click', function() {
     }
 
     if(new Date().getFullYear() - yearBirthDay.value < 18) {
-        
+        dayBirthDay.style.border = '1px solid #ce4646'
+        monthBirthDay.style.border = '1px solid #ce4646'
+        yearBirthDay.style.border = '1px solid #ce4646'
+    } else {
+        dayBirthDay.style.border = '1px solid #ccd0d5'
+        monthBirthDay.style.border = '1px solid #ccd0d5'
+        yearBirthDay.style.border = '1px solid #ccd0d5'
     }
 })
+
+var birthdayGuide = document.getElementById('birthday_guide');
+var genderGuide = document.getElementById('gender_guide');
+var showGenderGuideBtn = document.getElementById('show_gender_guide_btn');
+var showBirthdayGuideBtn = document.getElementById('show_birthday_guide_btn');
+var showGenderGuide = false;
+var showBirthdayGuide = false;
+
+showGenderGuideBtn.addEventListener('click', function() {
+    showGenderGuide = !showGenderGuide;
+    if(showGenderGuide) {
+        genderGuide.style.display = 'flex';
+    } else {
+        genderGuide.style.display = 'none';
+    }
+})
+
+showBirthdayGuideBtn.addEventListener('click', function() {
+    showBirthdayGuide = !showBirthdayGuide;
+    if(showBirthdayGuide) {
+        birthdayGuide.style.display = 'block';
+    } else {
+        birthdayGuide.style.display = 'none';
+    }
+})
+
+document.addEventListener('click', function(event) {
+    showGenderGuide = showGenderGuideBtn.contains(event.target);
+    showBirthdayGuide = showBirthdayGuideBtn.contains(event.target);
+    if(showGenderGuide) {
+        genderGuide.style.display = 'block';
+    } else {
+        genderGuide.style.display = 'none';
+    }
+
+    if(showBirthdayGuide) {
+        birthdayGuide.style.display = 'block';
+    } else {
+        birthdayGuide.style.display = 'none';
+    }
+});

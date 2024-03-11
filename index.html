@@ -29,11 +29,11 @@
                 <input id="password" class="field" placeholder="New Password"/>
                 <div class="field_with_icon">
                     <div class="field_header">
-                        <div class="guide">
-                            Providing your birthday helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your profile. For more details, please visit our <span class="link">Privacy Policy.</span>
+                        <div class="guide" id="birthday_guide">
+                            <strong style="color: gray;">Providing your birthday</strong> helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your profile. For more details, please visit our <span class="link">Privacy Policy.</span>
                         </div>
                         <p class="">Date of birth</p>
-                        <i class="bi bi-question-circle-fill"></i>
+                        <i class="bi bi-question-circle-fill" id="show_birthday_guide_btn"></i>
                     </div>
                     <div class="fields">
                         <select id="day" class="select_field">
@@ -49,11 +49,11 @@
                 </div>
                 <div class="field_with_icon">
                     <div class="field_header">
-                        <div class="guide">
+                        <div class="guide" id="gender_guide">
                             You can change who sees your gender on your profile later. Select Custom to choose another gender, or if you'd rather not say.
                         </div>
                         <p class="">Gender</p>
-                        <i class="bi bi-question-circle-fill"></i>
+                        <i class="bi bi-question-circle-fill" id="show_gender_guide_btn"></i>
                     </div>
                     <div class="fields">
                         <label class="radio-container">
